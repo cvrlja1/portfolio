@@ -1,5 +1,5 @@
-import NikolaPic from '../assets/nikola_picture.jpg'
 import { AnimatePresence, motion } from "framer-motion";
+import AboutMe from "./AboutMe";
 
 
 function About() {
@@ -12,8 +12,7 @@ function About() {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.4 }}
             >
-                <img src={NikolaPic} alt="Nikola" width={200} height={200} className="border-2  rounded-full"/>
-                <p className="text-primary">Welcome to my portfolio page <br/>My name is Nikola, im 28 and self-taught developer or whatever lol.</p>
+             <AboutMe />
             </motion.div>
         </div>
     )
