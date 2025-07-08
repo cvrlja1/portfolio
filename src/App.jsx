@@ -19,7 +19,7 @@ function App() {
     const [currentPage, setCurrentPage] = useState('about');
 
   return (
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full h-screen overflow-auto">
         <div className="absolute inset-0 bg-center bg-cover filter blur-md" style={{ backgroundImage: `url(${background})` }} />
           <div className="relative z-10">
               <Header setCurrentPage={setCurrentPage} />
