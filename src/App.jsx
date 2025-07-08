@@ -23,7 +23,7 @@ function App() {
         <div className="absolute inset-0 bg-center bg-cover filter blur-md" style={{ backgroundImage: `url(${background})` }} />
           <div className="relative z-10">
               <Header setCurrentPage={setCurrentPage} />
-              <div className="flex justify-center items-center space-x-2">
+              <div className="flex flex-col sm:flex-row justify-center items-center space-x-0 sm:space-x-2 space-y-2 sm:space-y-0">
                   <AnimatePresence mode="wait">
                       {currentPage === 'about' && <About />}
                       {currentPage === 'projects' && <Projects />}
