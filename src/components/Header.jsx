@@ -15,7 +15,7 @@ function Header() {
             <div className="self-start">
                 <img src={logo} alt="logo" />
             </div>
-            <div className="flex flex-row gap-5 justify-between">
+            <div className="flex flex-row gap-7 justify-between">
                 <a href="#top">
                     <img src={top} alt="top" style={{ width: '6rem', height: '3rem' }} />
                 </a>

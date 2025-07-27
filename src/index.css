@@ -38,6 +38,15 @@ html {
     shadow-indigo-800
 }
 
+.hero {
+    @apply
+    text-black
+    font-mono
+    leading-relaxed
+    tracking-wide
+    font-sans
+}
+
 .text-primary {
     @apply
     text-black
