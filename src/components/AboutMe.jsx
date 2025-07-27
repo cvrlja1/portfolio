@@ -4,7 +4,7 @@ function AboutMe() {
     return (
         <section
             id="about"
-            className="pt-32 px-6 sm:px-10 md:px-16 max-w-3xl mx-auto"
+            className="flex items-center justify-center p-10 px-6 sm:px-10 md:px-16 max-w-3xl mx-auto"
         >
             <p className="text-base sm:text-lg text-primary font-medium leading-relaxed tracking-wide font-sans">
                 Hi, I’m <strong>Nikola Cvrlja</strong>, a 28-year-old programmer originally from Serbia, now living in Vienna.

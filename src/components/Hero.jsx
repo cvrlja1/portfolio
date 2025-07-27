@@ -3,13 +3,13 @@ import NikolaPic from "../assets/nikola_picture.jpg";
 function Hero() {
     return (
         <section id="hero" className="pt-25 sm:pt-32 p-6 sm:p-10 max-w-5xl mx-auto">
-                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+            <div className="flex flex-col w-full h-auto items-center justify-center sm:flex-row sm:items-center sm:justify-start gap-6">
                     <img
                         src={NikolaPic}
                         alt="Nikola"
                         width={200}
                         height={200}
-                        className="border-2 rounded-full w-40 h-40 sm:w-48 sm:h-48 object-cover"
+                        className="border-1 rounded-full w-40 h-40 sm:w-48 sm:h-48 object-cover"
                     />
                     <p className="hero">
                         Hello, I'm Nikola Cvrlja, a developer focused on crafting full-stack web applications

@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@custom-variant dark (&:where(.dark, .dark *));
 
 
 html {
@@ -29,13 +30,18 @@ html {
     duration-200
     transform
     shadow-xs
-    shadow-indigo-300
+    rounded-lg
+    bg-sky-50/10
+    dark:text-white
+    dark:bg-blue-700/20
 }
+
 .bttn:hover {
     @apply
     cursor-pointer
-    scale-130
-    shadow-indigo-800
+    shadow-lg
+    shadow-indigo-200/80
+    dark:shadow-white/20
 }
 
 .hero {
@@ -55,6 +61,6 @@ html {
 
 .zoom {
     @apply
-    transition-transform duration-300 hover:scale-105
+    transition-transform duration-200 hover:scale-108
     hover:cursor-pointer
 }

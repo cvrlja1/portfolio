@@ -1,7 +1,7 @@
 function DropDown({ isOpen, setIsOpen }) {
 
     return (
-        <div className="md:hidden">
+        <div className="md:hidden dark:text-white">
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="focus:outline-none"

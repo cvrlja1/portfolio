@@ -1,4 +1,3 @@
-import { AnimatePresence, motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import project1Img from "../assets/cub3D.jpg";
 import project2Img from "../assets/minishell.png";

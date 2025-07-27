@@ -12,7 +12,7 @@ import Skills from "./components/Skills";
 function App() {
 
   return (
-      <div className="w-full h-screen">
+      <div id="main" className="w-full h-screen">
               <Header />
               <div className="main_cont">
                   <div className="shadow-sm">

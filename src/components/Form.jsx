@@ -1,12 +1,17 @@
+
+
+
 function ContactForm() {
+
     return (
-        <form className="bg-white/7 backdrop-blur-md rounded-xl border border-white/20 shadow-lg p-6 space-y-6 max-w-md mx-auto">
+        <form action="https://formspree.io/f/xqalbzdk" method="POST" className="bg-white/7 backdrop-blur-md rounded-xl border border-white/20 shadow-lg p-6 space-y-6 max-w-md mx-auto">
             <div>
                 <label htmlFor="name" className="block text-sm sm:text-base font-medium text-primary">
                     Name
                 </label>
                 <input
                     type="text"
+                    name="name"
                     id="name"
                     className="mt-1 w-full rounded border border-gray-300 p-2 sm:p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
@@ -18,6 +23,7 @@ function ContactForm() {
                 </label>
                 <input
                     type="email"
+                    name="email"
                     id="email"
                     className="mt-1 w-full rounded border border-gray-300 p-2 sm:p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
@@ -29,6 +35,7 @@ function ContactForm() {
                 </label>
                 <textarea
                     id="message"
+                    name="message"
                     rows="4"
                     className="mt-1 w-full rounded border border-gray-300 p-2 sm:p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 ></textarea>
