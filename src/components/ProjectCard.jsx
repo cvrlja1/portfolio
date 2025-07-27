@@ -7,7 +7,7 @@ const ProjectCard = ({ title, description, image,  codeLink }) => {
                 alt={title}
                 className="w-full h-48 object-cover rounded-md mb-4"
             />
-            <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
+            <h3 className="text-xl font-bold text-primary mb-2">{title}</h3>
             <p className="text-gray-300 text-sm mb-3">{description}</p>
             {codeLink && (
                     <a

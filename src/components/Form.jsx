@@ -2,7 +2,7 @@ function ContactForm() {
     return (
         <form className="bg-white/7 backdrop-blur-md rounded-xl border border-white/20 shadow-lg p-6">
             <div>
-                <label htmlFor="name" className="block text-sm font-medium text-white">
+                <label htmlFor="name" className="block text-sm font-medium text-primary">
                     Name
                 </label>
                 <input
@@ -13,7 +13,7 @@ function ContactForm() {
             </div>
 
             <div>
-                <label htmlFor="email" className="block text-sm font-medium text-white">
+                <label htmlFor="email" className="block text-sm font-medium text-primary">
                     Email
                 </label>
                 <input
@@ -24,7 +24,7 @@ function ContactForm() {
             </div>
 
             <div>
-                <label htmlFor="message" className="block text-sm font-medium text-white">
+                <label htmlFor="message" className="block text-sm font-medium text-primary">
                     Message
                 </label>
                 <textarea

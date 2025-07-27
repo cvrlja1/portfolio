@@ -3,25 +3,44 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+    scroll-padding-top: 6rem; /* adjust based on your navbar height */
+}
+
+.main_cont {
+    @apply
+    flex
+    flex-col
+    bg-zinc-50
+    inset-shadow-sm
+    inset-shadow-indigo-300
+}
+
 .bttn {
     @apply
-        text-white
-        font-semibold
-        bg-gray-700
-        hover:bg-sky-900
-        hover:cursor-pointer
-        rounded
-        py-2 px-4
-        shadow-md
-        hover:shadow-xl
-        transform
-        transition-transform duration-200
-        hover:scale-105
+    w-24
+    h-12
+    font-mono
+    text-lg
+    transition
+    delay-50
+    duration-200
+    transform
+    shadow-xs
+    shadow-indigo-300
+}
+.bttn:hover {
+    @apply
+    cursor-pointer
+    scale-130
+    shadow-indigo-800
 }
 
 .text-primary {
-    @apply text-white
-    font-semibold
+    @apply
+    text-black
+    font-mono
 }
 
 .zoom {

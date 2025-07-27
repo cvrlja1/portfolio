@@ -1,11 +1,27 @@
-function Header({ setCurrentPage }) {
+import logo from "../assets/logo.svg"
+
+function Header() {
+
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
-        <div className="flex flex-col sm:flex-row sm:justify-start p-6 sm:p-9 space-y-4 sm:space-y-0 sm:space-x-14 items-start">
-            <button className="bttn" type="button" onClick={() => setCurrentPage('about')}>About me</button>
-            <button className="bttn" type="button" onClick={() => setCurrentPage('projects')}>Projects</button>
-            <button className="bttn" type="button" onClick={() => setCurrentPage('contact')}>Contact</button>
-        </div>
+        <nav className="fixed top-0 left-0 w-full shadow-md flex justify-between items-center px-6 py-4 z-50 bg-stone-100/80">
+            <div className="self-start">
+                <img src={logo} alt="logo" />
+            </div>
+            <div className="flex flex-row w-86 justify-between">
+                <button className="bttn rounded-md" type="button" onClick={() => scrollToSection('about')}>About me</button>
+                <button className="bttn rounded-md" type="button" onClick={() => scrollToSection('projects')}>Projects</button>
+                <button className="bttn rounded-md" type="button" onClick={() => scrollToSection('contact')}>Contact</button>
+            </div>
+        </nav>
     )
 }
 
 export default Header
+
