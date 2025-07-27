@@ -2,7 +2,7 @@ import NikolaPic from "../assets/nikola_picture.jpg";
 
 function Hero() {
     return (
-        <section id="hero" className="pt-20 sm:pt-32 p-6 sm:p-10 max-w-5xl mx-auto">
+        <section id="hero" className="pt-25 sm:pt-32 p-6 sm:p-10 max-w-5xl mx-auto">
                 <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
                     <img
                         src={NikolaPic}
