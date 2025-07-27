@@ -6,6 +6,7 @@
 
 html {
     scroll-padding-top: 6rem; /* adjust based on your navbar height */
+    scroll-behavior: smooth;
 }
 
 .main_cont {

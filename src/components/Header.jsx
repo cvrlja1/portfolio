@@ -1,4 +1,5 @@
 import logo from "../assets/logo.svg"
+import top from "../assets/arrowup.svg"
 
 function Header() {
 
@@ -14,9 +15,13 @@ function Header() {
             <div className="self-start">
                 <img src={logo} alt="logo" />
             </div>
-            <div className="flex flex-row w-86 justify-between">
-                <button className="bttn rounded-md" type="button" onClick={() => scrollToSection('about')}>About me</button>
+            <div className="flex flex-row gap-5 justify-between">
+                <a href="#top">
+                    <img src={top} alt="top" style={{ width: '6rem', height: '3rem' }} />
+                </a>
                 <button className="bttn rounded-md" type="button" onClick={() => scrollToSection('projects')}>Projects</button>
+                <button className="bttn rounded-md" type="button" onClick={() => scrollToSection('about')}>About me</button>
+                <button className="bttn rounded-md" type="button" onClick={() => scrollToSection('skills')}>Skills</button>
                 <button className="bttn rounded-md" type="button" onClick={() => scrollToSection('contact')}>Contact</button>
             </div>
         </nav>
