@@ -4,7 +4,7 @@
 function ContactForm() {
 
     return (
-        <form action="https://formspree.io/f/xqalbzdk" method="POST" className="bg-white/7 backdrop-blur-md rounded-xl border border-white/20 shadow-lg p-6 space-y-6 max-w-md mx-auto">
+        <form action="https://formspree.io/f/xqalbzdk" method="POST" className="bg-white/7 backdrop-blur-md rounded-xl border border-white/20 shadow-lg p-6 space-y-6 max-w-md ">
             <div>
                 <label htmlFor="name" className="block text-sm sm:text-base font-medium text-primary">
                     Name
