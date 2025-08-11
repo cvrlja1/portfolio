@@ -1,5 +1,6 @@
 import LinkedInIcon from '../assets/linkedin.svg?react';
 import GitHubIcon from '../assets/github.svg?react';
+import TopButton from './TopButton';
 
 function Footer() {
     return (
@@ -17,7 +18,7 @@ function Footer() {
                 <p className="text-primary">Designed & built by Nikola Cvrlja — 2025</p>
             </div>
 
-            <div></div>
+            <div><TopButton /></div>
         </footer>
     );
 }

@@ -8,13 +8,16 @@ import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import ProjectInfo from "./components/ProjectInfo";
+import Form from "./components/Form";
 
 
 function App() {
+    const [isForm, setIsForm] = useState(false);
 
   return (
       <div id="main" className="w-full h-screen">
-              <Header />
+              <Header isForm={isForm} setIsForm={setIsForm} />
+          {isForm && <Form setIsForm={setIsForm} /> }
               <div className="main_cont">
                   <div className="shadow-sm">
                     <Hero />
@@ -27,9 +30,6 @@ function App() {
                   </div>
                   <div className="shadow-sm p-5">
                       <Skills />
-                  </div>
-                  <div className="shadow-sm p-5">
-                    <Contact />
                   </div>
               </div>
         <Footer />

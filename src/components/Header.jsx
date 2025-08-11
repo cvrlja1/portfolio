@@ -3,7 +3,7 @@ import DropDown from "./DropDown"
 import DropNav from "./DropNav"
 import ChangeTheme from "./ChangeTheme"
 
-function Header() {
+function Header({ isForm, setIsForm}) {
     const [isOpen, setIsOpen] = useState(false);
 
 
@@ -15,8 +15,14 @@ function Header() {
         setIsOpen(false);
     };
 
+    const openContact = () => {
+        if (!isForm) {
+            setIsForm(true);
+        }
+    }
+
     return (
-        <nav className="fixed top-0 left-0 w-full shadow-md flex justify-between items-center backdrop-blur-sm px-4 py-3 sm:px-6 sm:py-4 z-50 bg-stone-100/80 dark:bg-slate-950">
+        <nav className="fixed top-0 left-0 w-full shadow-lg flex justify-between items-center backdrop-blur-sm px-4 py-3 sm:px-6 sm:py-4 z-50 bg-stone-100/30 dark:bg-slate-950">
             <div className="self-start">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -41,25 +47,10 @@ function Header() {
                 {isOpen && ( <DropNav scrollToSection={scrollToSection} />)}
             <ChangeTheme />
             <div className="hidden md:flex flex-wrap flex-row gap-7 justify-between">
-                <a href="#top">
-                    <svg
-                        viewBox="0 0 32 32"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        className="w-14 h-12 dark:text-white zoom"
-                    >
-                        <g fill="currentColor" transform="translate(-516 -983)">
-                            <path
-                                d="M546,1011 C546,1012.1 545.104,1013 544,1013 L520,1013 C518.896,1013 518,1012.1 518,1011 L518,987 C518,985.896 518.896,985 520,985 L544,985 C545.104,985 546,985.896 546,987 L546,1011 L546,1011 Z M544,983 L520,983 C517.791,983 516,984.791 516,987 L516,1011 C516,1013.21 517.791,1015 520,1015 L544,1015 C546.209,1015 548,1013.21 548,1011 L548,987 C548,984.791 546.209,983 544,983 L544,983 Z M532.879,991.465 C532.639,991.225 532.311,991.15 532,991.205 C531.689,991.15 531.361,991.225 531.121,991.465 L525.465,997.121 C525.074,997.512 525.074,998.146 525.465,998.535 C525.854,998.926 526.488,998.926 526.879,998.535 L531,994.414 L531,1005 C531,1005.55 531.447,1006 532,1006 C532.552,1006 533,1005.55 533,1005 L533,994.414 L537.121,998.535 C537.512,998.926 538.145,998.926 538.535,998.535 C538.926,998.146 538.926,997.512 538.535,997.121 L532.879,991.465 L532.879,991.465 Z"
-                            />
-                        </g>
-                    </svg>
-
-                </a>
                 <button className="bttn rounded-md zoom" type="button" onClick={() => scrollToSection('projects')}>Projects</button>
                 <button className="bttn rounded-md zoom" type="button" onClick={() => scrollToSection('about')}>About me</button>
                 <button className="bttn rounded-md zoom" type="button" onClick={() => scrollToSection('skills')}>Skills</button>
-                <button className="bttn rounded-md zoom" type="button" onClick={() => scrollToSection('contact')}>Contact</button>
+                <button className="bttn rounded-md zoom" type="button" onClick={() => openContact()}>Contact</button>
             </div>
         </nav>
     )
