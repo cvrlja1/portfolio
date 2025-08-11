@@ -19,7 +19,7 @@ function ProjectInfo(props) {
     }, [props.video]);
 
     return (
-        <div className={`fixed z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-100/40 rounded-lg shadow-xl 
+        <div className={`hidden md:block fixed z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-100/40 rounded-lg shadow-xl 
             backdrop-blur-sm border border-white/50  transition-opacity duration-300 ease-in-out 
             ${props.isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`} >
             <div className="flex flex-col gap-5 p-5">
