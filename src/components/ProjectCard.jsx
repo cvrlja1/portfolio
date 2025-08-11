@@ -1,7 +1,7 @@
 
-const ProjectCard = ({ title, description, image,  codeLink }) => {
+const ProjectCard = ({ title, description, image,  codeLink, handleClick }) => {
     return (
-        <div className=" zoom bg-sky-50/10 backdrop-blur-lg border border-white/10 rounded-lg shadow-md overflow-hidden p-4 hover:shadow-lg transition shadow-indigo-200/80">
+        <div onClick={handleClick} className=" zoom bg-sky-50/10 backdrop-blur-lg border border-white/10 rounded-lg shadow-md overflow-hidden p-4 hover:shadow-lg transition shadow-indigo-200/80">
             <img
                 src={image}
                 alt={title}

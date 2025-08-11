@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
+import ProjectInfo from "./components/ProjectInfo";
 
 
 function App() {

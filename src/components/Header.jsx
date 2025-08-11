@@ -16,7 +16,7 @@ function Header() {
     };
 
     return (
-        <nav className="fixed top-0 left-0 w-full shadow-md flex justify-between items-center px-4 py-3 sm:px-6 sm:py-4 z-50 bg-stone-100/80 dark:bg-slate-950">
+        <nav className="fixed top-0 left-0 w-full shadow-md flex justify-between items-center backdrop-blur-sm px-4 py-3 sm:px-6 sm:py-4 z-50 bg-stone-100/80 dark:bg-slate-950">
             <div className="self-start">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
